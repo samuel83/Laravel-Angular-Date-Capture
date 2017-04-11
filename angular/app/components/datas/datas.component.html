@@ -50,7 +50,7 @@
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Key Field</label>
                                     <ui-select name="key_field_id"  multiple ng-model="vm.searchKeySelected" theme="bootstrap">
-                                        <ui-select-match placeholder="Select key filed(s)...">{{$item.name}}</ui-select-match>
+                                        <ui-select-match placeholder="Select key field(s)...">{{$item.name}}</ui-select-match>
                                         <ui-select-choices repeat="item  in vm.systemKeyFields | filter: $select.search">
                                             <div ng-bind-html="item.name | highlight: $select.search "></div>
                                         </ui-select-choices>
